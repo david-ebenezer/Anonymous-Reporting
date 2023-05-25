@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Records</title>
+</head>
+<body>
+    <h1>Records</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <% records.forEach(function(record) { %>
+        <tr>
+            <td><%= record._id %></td>
+            <td><%= record.name %></td>
+            <td><%= record.email %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
